@@ -13,6 +13,7 @@ public class ControllerHandsManager : MonoBehaviour
     {
         handAnimator = GetComponent<Animator>();
         SetupInputActions();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void SetupInputActions()
