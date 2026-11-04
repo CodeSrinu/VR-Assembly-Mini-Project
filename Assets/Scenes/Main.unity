@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 41261545}
   - component: {fileID: 41261544}
   - component: {fileID: 41261543}
+  - component: {fileID: 41261546}
   m_Layer: 0
   m_Name: domed_cap_nut
   m_TagString: Untagged
@@ -372,7 +373,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41261539}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.035
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -390,7 +391,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &41261546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41261539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &57827642
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +450,7 @@ GameObject:
   - component: {fileID: 98151291}
   - component: {fileID: 98151290}
   - component: {fileID: 98151289}
+  - component: {fileID: 98151292}
   m_Layer: 0
   m_Name: stud_7
   m_TagString: Untagged
@@ -675,7 +690,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98151285}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -693,7 +708,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &98151292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98151285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!4 &152420743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -713,6 +741,7 @@ GameObject:
   - component: {fileID: 169609690}
   - component: {fileID: 169609689}
   - component: {fileID: 169609688}
+  - component: {fileID: 169609691}
   m_Layer: 0
   m_Name: hex_nut_9
   m_TagString: Untagged
@@ -952,7 +981,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169609684}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -970,7 +999,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &169609691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169609684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1001 &181525854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1046,6 +1088,7 @@ GameObject:
   - component: {fileID: 273531471}
   - component: {fileID: 273531470}
   - component: {fileID: 273531469}
+  - component: {fileID: 273531472}
   m_Layer: 0
   m_Name: hex_nut_3
   m_TagString: Untagged
@@ -1285,7 +1328,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273531465}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1303,7 +1346,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &273531472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273531465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1685,7 @@ GameObject:
   - component: {fileID: 470917441}
   - component: {fileID: 470917440}
   - component: {fileID: 470917439}
+  - component: {fileID: 470917442}
   m_Layer: 0
   m_Name: hex_nut_4
   m_TagString: Untagged
@@ -1868,7 +1925,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470917435}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1886,7 +1943,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &470917442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470917435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &493167038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1971,7 @@ GameObject:
   - component: {fileID: 493167044}
   - component: {fileID: 493167043}
   - component: {fileID: 493167042}
+  - component: {fileID: 493167045}
   m_Layer: 0
   m_Name: hex_nut_5
   m_TagString: Untagged
@@ -2140,7 +2211,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493167038}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2158,7 +2229,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &493167045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493167038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &579550305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,6 +2257,7 @@ GameObject:
   - component: {fileID: 579550311}
   - component: {fileID: 579550310}
   - component: {fileID: 579550309}
+  - component: {fileID: 579550312}
   m_Layer: 0
   m_Name: stop_valve__body_2
   m_TagString: Untagged
@@ -2412,7 +2497,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579550305}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 2.5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2430,7 +2515,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &579550312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579550305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!4 &584692752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -2562,6 +2660,7 @@ GameObject:
   - component: {fileID: 612109350}
   - component: {fileID: 612109349}
   - component: {fileID: 612109348}
+  - component: {fileID: 612109351}
   m_Layer: 0
   m_Name: hex_nut_2
   m_TagString: Untagged
@@ -2801,7 +2900,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612109344}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2819,7 +2918,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &612109351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612109344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &729098867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,6 +2946,7 @@ GameObject:
   - component: {fileID: 729098873}
   - component: {fileID: 729098872}
   - component: {fileID: 729098871}
+  - component: {fileID: 729098874}
   m_Layer: 0
   m_Name: filler
   m_TagString: Untagged
@@ -3073,7 +3186,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729098867}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.06
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3091,7 +3204,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &729098874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729098867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &753307543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
@@ -3153,6 +3279,7 @@ GameObject:
   - component: {fileID: 755827230}
   - component: {fileID: 755827229}
   - component: {fileID: 755827228}
+  - component: {fileID: 755827231}
   m_Layer: 0
   m_Name: hex_nut_6
   m_TagString: Untagged
@@ -3392,7 +3519,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755827224}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3410,7 +3537,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &755827231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755827224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &765476958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,6 +3565,7 @@ GameObject:
   - component: {fileID: 765476964}
   - component: {fileID: 765476963}
   - component: {fileID: 765476962}
+  - component: {fileID: 765476965}
   m_Layer: 0
   m_Name: hex_nut_7
   m_TagString: Untagged
@@ -3664,7 +3805,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765476958}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3682,7 +3823,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &765476965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765476958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &766392542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,6 +3851,7 @@ GameObject:
   - component: {fileID: 766392548}
   - component: {fileID: 766392547}
   - component: {fileID: 766392546}
+  - component: {fileID: 766392549}
   m_Layer: 0
   m_Name: stud_4
   m_TagString: Untagged
@@ -3936,7 +4091,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766392542}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3954,7 +4109,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &766392549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766392542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &769330607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3969,6 +4137,7 @@ GameObject:
   - component: {fileID: 769330613}
   - component: {fileID: 769330612}
   - component: {fileID: 769330611}
+  - component: {fileID: 769330614}
   m_Layer: 0
   m_Name: Stud-1
   m_TagString: Untagged
@@ -4208,7 +4377,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769330607}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4226,7 +4395,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &769330614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769330607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &789232042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,6 +4423,7 @@ GameObject:
   - component: {fileID: 789232048}
   - component: {fileID: 789232047}
   - component: {fileID: 789232046}
+  - component: {fileID: 789232049}
   m_Layer: 0
   m_Name: stud_3
   m_TagString: Untagged
@@ -4480,7 +4663,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789232042}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4498,7 +4681,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &789232049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789232042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &830031508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4513,6 +4709,7 @@ GameObject:
   - component: {fileID: 830031514}
   - component: {fileID: 830031513}
   - component: {fileID: 830031512}
+  - component: {fileID: 830031515}
   m_Layer: 0
   m_Name: collar
   m_TagString: Untagged
@@ -4752,7 +4949,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830031508}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4770,7 +4967,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &830031515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830031508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,6 +5044,7 @@ GameObject:
   - component: {fileID: 865906781}
   - component: {fileID: 865906780}
   - component: {fileID: 865906779}
+  - component: {fileID: 865906782}
   m_Layer: 0
   m_Name: hex_nut_8
   m_TagString: Untagged
@@ -5073,7 +5284,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865906775}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.025
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5091,7 +5302,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &865906782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865906775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &956767823
 GameObject:
   m_ObjectHideFlags: 0
@@ -5342,6 +5566,7 @@ GameObject:
   - component: {fileID: 1046080296}
   - component: {fileID: 1046080295}
   - component: {fileID: 1046080294}
+  - component: {fileID: 1046080297}
   m_Layer: 0
   m_Name: Brigade-1
   m_TagString: Untagged
@@ -5581,7 +5806,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046080290}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.7
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5599,7 +5824,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1046080297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046080290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1112967649
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,6 +5852,7 @@ GameObject:
   - component: {fileID: 1112967655}
   - component: {fileID: 1112967654}
   - component: {fileID: 1112967653}
+  - component: {fileID: 1112967656}
   m_Layer: 0
   m_Name: bush
   m_TagString: Untagged
@@ -5853,7 +6092,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112967649}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.25
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5871,7 +6110,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1112967656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112967649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1117310553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5886,6 +6138,7 @@ GameObject:
   - component: {fileID: 1117310559}
   - component: {fileID: 1117310558}
   - component: {fileID: 1117310557}
+  - component: {fileID: 1117310560}
   m_Layer: 0
   m_Name: stud_10
   m_TagString: Untagged
@@ -6125,7 +6378,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117310553}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -6143,7 +6396,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1117310560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117310553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1158585598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78c42bda2bae34e479147749a44a6382, type: 3}
@@ -6363,6 +6629,7 @@ GameObject:
   - component: {fileID: 1342650799}
   - component: {fileID: 1342650798}
   - component: {fileID: 1342650797}
+  - component: {fileID: 1342650800}
   m_Layer: 0
   m_Name: stud_5
   m_TagString: Untagged
@@ -6602,7 +6869,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342650793}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -6620,7 +6887,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1342650800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342650793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1393665864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6635,6 +6915,7 @@ GameObject:
   - component: {fileID: 1393665870}
   - component: {fileID: 1393665869}
   - component: {fileID: 1393665868}
+  - component: {fileID: 1393665871}
   m_Layer: 0
   m_Name: stud_8
   m_TagString: Untagged
@@ -6874,7 +7155,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393665864}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -6892,7 +7173,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1393665871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393665864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1400557015
 GameObject:
   m_ObjectHideFlags: 0
@@ -6907,6 +7201,7 @@ GameObject:
   - component: {fileID: 1400557021}
   - component: {fileID: 1400557020}
   - component: {fileID: 1400557019}
+  - component: {fileID: 1400557022}
   m_Layer: 0
   m_Name: Spindle-1
   m_TagString: Untagged
@@ -6923,7 +7218,7 @@ Transform:
   m_GameObject: {fileID: 1400557015}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3546212, y: 0.05961178, z: 0.5102853, w: 0.7812164}
-  m_LocalPosition: {x: 1.663, y: 0.352, z: -1.989}
+  m_LocalPosition: {x: 1.583, y: 0.376, z: -1.924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7146,7 +7441,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400557015}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.4
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -7164,7 +7459,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1400557022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400557015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1416220662
 GameObject:
   m_ObjectHideFlags: 0
@@ -7179,6 +7487,7 @@ GameObject:
   - component: {fileID: 1416220668}
   - component: {fileID: 1416220667}
   - component: {fileID: 1416220666}
+  - component: {fileID: 1416220669}
   m_Layer: 0
   m_Name: stud_6
   m_TagString: Untagged
@@ -7418,7 +7727,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416220662}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -7436,7 +7745,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1416220669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416220662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1421612857
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,6 +7773,7 @@ GameObject:
   - component: {fileID: 1421612863}
   - component: {fileID: 1421612862}
   - component: {fileID: 1421612861}
+  - component: {fileID: 1421612864}
   m_Layer: 0
   m_Name: brigade_2
   m_TagString: Untagged
@@ -7690,7 +8013,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421612857}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.35
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -7708,7 +8031,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1421612864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421612857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1461506064 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6234826113123647821, guid: 78c42bda2bae34e479147749a44a6382, type: 3}
@@ -8007,6 +8343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1718513916334437810, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_FarAttachMode
       value: 0
@@ -8050,6 +8390,14 @@ PrefabInstance:
     - target: {fileID: 7399425242140339816, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_UseCharacterControllerIfExists
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108794592199166444, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8559622106701032237, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8877177980677234388, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_FarAttachMode
@@ -8095,6 +8443,7 @@ GameObject:
   - component: {fileID: 1539423180}
   - component: {fileID: 1539423179}
   - component: {fileID: 1539423178}
+  - component: {fileID: 1539423181}
   m_Layer: 0
   m_Name: seal_1
   m_TagString: Untagged
@@ -8334,7 +8683,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539423174}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.4
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -8352,7 +8701,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1539423181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539423174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1543323162
 GameObject:
   m_ObjectHideFlags: 0
@@ -8367,6 +8729,7 @@ GameObject:
   - component: {fileID: 1543323168}
   - component: {fileID: 1543323167}
   - component: {fileID: 1543323166}
+  - component: {fileID: 1543323169}
   m_Layer: 0
   m_Name: stop_valve_body_1
   m_TagString: Untagged
@@ -8606,7 +8969,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543323162}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 6.5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -8625,6 +8988,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1543323169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543323162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1575497090
 GameObject:
   m_ObjectHideFlags: 0
@@ -8730,6 +9106,7 @@ GameObject:
   - component: {fileID: 1589721535}
   - component: {fileID: 1589721538}
   - component: {fileID: 1589721539}
+  - component: {fileID: 1589721540}
   m_Layer: 0
   m_Name: Valve Steering
   m_TagString: Untagged
@@ -8949,7 +9326,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589721531}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.6
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9007,6 +9384,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6557802457556304983, guid: 0f32b39889250de4ca0f7b86cfb8661f, type: 3}
+--- !u!114 &1589721540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589721531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1001 &1629643609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9283,7 +9673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f32b39889250de4ca0f7b86cfb8661f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1349302667072249752, guid: 0f32b39889250de4ca0f7b86cfb8661f, type: 3}
       propertyPath: m_Name
@@ -9412,6 +9802,7 @@ GameObject:
   - component: {fileID: 1770127801}
   - component: {fileID: 1770127800}
   - component: {fileID: 1770127799}
+  - component: {fileID: 1770127802}
   m_Layer: 0
   m_Name: Stud-2
   m_TagString: Untagged
@@ -9428,7 +9819,7 @@ Transform:
   m_GameObject: {fileID: 1770127795}
   serializedVersion: 2
   m_LocalRotation: {x: -0.066009775, y: 0.10351171, z: 0.48851916, w: 0.8638733}
-  m_LocalPosition: {x: 3.069, y: 0.3, z: -1.514}
+  m_LocalPosition: {x: 3.0582, y: 0.3065, z: -1.5141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9651,7 +10042,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770127795}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9669,7 +10060,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1770127802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770127795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &1984195070
 GameObject:
   m_ObjectHideFlags: 0
@@ -9684,6 +10088,7 @@ GameObject:
   - component: {fileID: 1984195076}
   - component: {fileID: 1984195075}
   - component: {fileID: 1984195074}
+  - component: {fileID: 1984195077}
   m_Layer: 0
   m_Name: stud_9
   m_TagString: Untagged
@@ -9923,7 +10328,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984195070}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.04
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9941,7 +10346,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1984195077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984195070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7080cd0ace1bfb43a513b934355ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableOutline
+  outlineMat: {fileID: 2100000, guid: e81bb3ce1632b4e429e0adbae66c629a, type: 2}
 --- !u!1 &2053780355
 GameObject:
   m_ObjectHideFlags: 0
