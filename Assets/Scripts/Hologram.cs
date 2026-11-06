@@ -12,7 +12,7 @@ public class Hologram : MonoBehaviour
 
     private void OnEnable()
     {
-        AssemblyManager.NewStepGiven += OnNewStepGiven;
+        AssemblyManager.AssemblyStepGiven += OnNewStepGiven;
     }
 
     private void OnNewStepGiven(AssemblyStep step)

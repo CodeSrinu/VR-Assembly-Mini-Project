@@ -12,7 +12,7 @@ public class SectionViewUI : MonoBehaviour
     private void Start()
     {
         btn.onClick.AddListener(OnBtnClick);
-        AssemblyManager.NewStepGiven += OnNewStepGiven;
+        AssemblyManager.AssemblyStepGiven += OnNewStepGiven;
         gameObject.SetActive(false);
     }
 
