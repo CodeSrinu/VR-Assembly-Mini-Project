@@ -38,6 +38,5 @@ public class GrabbableOutline : MonoBehaviour
     private void OnHoverExited(HoverExitEventArgs args)
     {
         mr.materials = new Material[] {originalMat};
-
     }
 }

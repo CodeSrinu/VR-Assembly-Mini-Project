@@ -7,4 +7,5 @@ public struct AssemblyStep
     public GameObject requiredPart;
     public XRSocketInteractor socket;
     public string instruction;
+    public int number;
 }
