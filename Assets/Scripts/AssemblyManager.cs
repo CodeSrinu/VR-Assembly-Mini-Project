@@ -117,18 +117,25 @@ public class AssemblyManager : MonoBehaviour
         {
             canProgress = false;
             instructionsUI.ShowInstruction("Turn off the section view to continue the assembly");
+            hologram.RemoveCurrentHologram();
         }
         else
         {
             canProgress = true;
         }
 
-        if (_currentStep < assemblySteps.Count && canProgress)
+        while (!canProgress || _currentStep < 6)
         {
-            AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
+            if (_currentStep < assemblySteps.Count)
+            {
+                AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
+            }
+            else if (_currentStep >= assemblySteps.Count)
+            {
+                AssemblyComplete?.Invoke();
+            }
         }
-        else
-            AssemblyComplete?.Invoke();
+
     }
 
     private IEnumerator WaitForPlacement(GameObject obj, Transform attachTransorm)

@@ -54,6 +54,16 @@ public class Hologram : MonoBehaviour
         if(obj.transform.childCount > 0)  Destroy(obj.transform.GetChild(0).gameObject);
     }
 
+    public void RemoveCurrentHologram()
+    {
+        currentHoloGramObj?.SetActive(false);
+
+    }
+    public void AddCurrentHologram()
+    {
+        currentHoloGramObj?.SetActive(true);
+    }
+
     public void ShowIncorrectFeedBack()
     {
         hologramMRender.materials = new Material[] { incorrectFeedbackMat };
