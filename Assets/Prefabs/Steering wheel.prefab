@@ -50,11 +50,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ab2dd3ef8e1bca4d9effb099ac98977, type: 3}
       propertyPath: m_Name
-      value: Valve_Steering
+      value: Steering wheel
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ab2dd3ef8e1bca4d9effb099ac98977, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8ab2dd3ef8e1bca4d9effb099ac98977, type: 3}
+      propertyPath: m_TagString
+      value: Wheel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

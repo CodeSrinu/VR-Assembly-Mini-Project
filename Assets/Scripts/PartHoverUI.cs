@@ -20,6 +20,7 @@ public class PartHoverUI : MonoBehaviour
         {
             part.hoverEntered.AddListener(OnHoverEntered);
             part.hoverExited.AddListener(OnHoverExited);
+            part.selectEntered.AddListener(OnSelectEntered);
         }
     }
 
@@ -28,12 +29,21 @@ public class PartHoverUI : MonoBehaviour
         GameObject hoveredPart = args.interactableObject.transform.gameObject;
 
         partNameText.text = hoveredPart.tag;
-        Vector3 pos = args.interactableObject.transform.position + Vector3.up * yOffset + Vector3.back * zOffset;
+
+        Vector3 pos = hoveredPart.transform.position
+                    + Vector3.up * yOffset
+                    + Vector3.back * zOffset;
+
         transform.position = pos;
         background.SetActive(true);
     }
 
     private void OnHoverExited(HoverExitEventArgs args)
+    {
+        background.SetActive(false);
+    }
+
+    private void OnSelectEntered(SelectEnterEventArgs args)
     {
         background.SetActive(false);
     }

@@ -21,6 +21,38 @@ public class AssemblyManager : MonoBehaviour
     private HashSet<GameObject> placedParts = new HashSet<GameObject>();
     private bool isInSectionView = false;
     private AssemblyStep currentStep;
+    string[] instructions =
+{
+    "Position the <b>Body</b> in its designated location",
+    "Place the <b>Body Top</b> onto the main valve body",
+    "Insert the <b>Seat</b> into the body",
+    "Fit the <b>Seal</b> into its designated groove",
+    "Position the <b>Collar</b> onto the assembly",
+    "Insert the <b>Filler</b> into its designated position",
+    "Position the first <b>Small Brigade</b> component",
+    "Insert the first <b>Small Stud</b> into its mounting hole",
+    "Insert the second <b>Small Stud</b> into its mounting hole",
+    "Insert the first <b>Normal Stud</b> into its mounting hole",
+    "Insert the second <b>Normal Stud</b> into its mounting hole",
+    "Insert the third <b>Normal Stud</b> into its mounting hole",
+    "Insert the fourth <b>Normal Stud</b> into its mounting hole",
+    "Insert the fifth <b>Normal Stud</b> into its mounting hole",
+    "Insert the sixth <b>Normal Stud</b> into its mounting hole",
+    "Tighten the first <b>Hex Nut</b> onto its corresponding stud",
+    "Tighten the second <b>Hex Nut</b> onto its corresponding stud",
+    "Tighten the third <b>Hex Nut</b> onto its corresponding stud",
+    "Tighten the fourth <b>Hex Nut</b> onto its corresponding stud",
+    "Tighten the fifth <b>Hex Nut</b> onto its corresponding stud",
+    "Tighten the sixth <b>Hex Nut</b> onto its corresponding stud",
+    "Insert the first <b>Big Stud</b> into its mounting position",
+    "Insert the second <b>Big Stud</b> into its mounting position",
+    "Position the main <b>Brigade</b> onto the assembly",
+    "Tighten the seventh <b>Hex Nut</b> onto its corresponding stud",
+    "Tighten the eighth <b>Hex Nut</b> onto its corresponding stud",
+    "Insert the <b>Spindle</b> into the valve assembly",
+    "Attach the <b>Steering Wheel</b> to the spindle",
+    "Secure the steering wheel using the <b>Domed Cap Nut</b>"
+};
     public AssemblyStep[] remainingSteps => assemblySteps.ToArray()[_currentStep..assemblySteps.Count];
     private void OnEnable()
     {
@@ -83,18 +115,18 @@ public class AssemblyManager : MonoBehaviour
 
         if ((IXRInteractor)assemblySteps[_currentStep].socket != args.interactorObject) return;
 
-        hologram.ResetToHologramMat();
+        hologram?.ResetToHologramMat();
         
     }
     private void ShowValidationFeedback(GameObject obj)
     {
-        if (obj == assemblySteps[_currentStep].requiredPart)
+        if (obj.tag == assemblySteps[_currentStep].requiredPart.tag)
         {
-            hologram.ShowCorrectFeedBack();
+            hologram?.ShowCorrectFeedBack();
         }
         else
         {
-            hologram.ShowIncorrectFeedBack();
+            hologram?.ShowIncorrectFeedBack();
         }
     }
     private void OnSelectEntered(SelectEnterEventArgs args)
@@ -129,7 +161,7 @@ public class AssemblyManager : MonoBehaviour
         {
 
             instructionsUI.ShowInstruction("Turn off the section view to continue the assembly");
-            hologram.RemoveCurrentHologram();
+            hologram?.RemoveCurrentHologram();
             return;
         }
 
@@ -179,7 +211,7 @@ public class AssemblyManager : MonoBehaviour
 
             step.requiredPart = partsparent.GetChild(i).gameObject;
             step.socket = sockets.GetChild(i).GetComponent<XRSocketInteractor>();
-            step.instruction = "Place " + step.requiredPart.name;
+            step.instruction = instructions[i];
             step.number = i + 1;
             assemblySteps.Add(step);
         }

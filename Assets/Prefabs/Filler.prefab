@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Filler
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa62d2cdd62f4ca4c85d36a66eeb882b, type: 3}
+      propertyPath: m_TagString
+      value: Filler
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -523,7 +523,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 85576382}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -992,11 +993,11 @@ Transform:
   - {fileID: 302252132}
   - {fileID: 727434634}
   - {fileID: 257755825}
-  - {fileID: 1832451009}
-  - {fileID: 893238390}
   - {fileID: 395422078}
   - {fileID: 1509427302}
   - {fileID: 935197727}
+  - {fileID: 1832451009}
+  - {fileID: 893238390}
   - {fileID: 1783420047}
   - {fileID: 289024792}
   - {fileID: 208361917}
@@ -1094,7 +1095,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 149459956}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -1216,7 +1218,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 152898016}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -1905,7 +1908,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 237052659}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -2206,7 +2210,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 301088741}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -3102,7 +3107,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -2816409035840759171, guid: 0160ae60a1e2e684784552ae58e5bb8e, type: 3}
+  m_Mesh: {fileID: -4047197814596770360, guid: 9e0cb3bd073d0cd48ae7d9f6eae3a1c2, type: 3}
 --- !u!114 &429005133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3139,7 +3144,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 429005134}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -3461,7 +3467,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 489780415}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -3702,7 +3709,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 525485520}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -3911,8 +3919,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552556356}
-  m_LocalRotation: {x: -0, y: -0.91787595, z: 0, w: -0.3968674}
-  m_LocalPosition: {x: 0, y: 0, z: -1.514}
+  m_LocalRotation: {x: -0, y: -0.6761523, z: -0, w: -0.7367619}
+  m_LocalPosition: {x: 0, y: 0, z: -0.296}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3921,10 +3929,10 @@ RectTransform:
   - {fileID: 1718100238}
   - {fileID: 108462314}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -226.765, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -274.913, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.361, y: 1.26}
+  m_AnchoredPosition: {x: 4.753, y: 1.655}
   m_SizeDelta: {x: 60, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552556362
@@ -4289,7 +4297,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 615433534}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -4425,8 +4434,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620401333}
-  m_LocalRotation: {x: 0, y: 0.9063079, z: -0, w: -0.42261827}
-  m_LocalPosition: {x: 0, y: 0, z: 1.082}
+  m_LocalRotation: {x: -0, y: 0.41814727, z: -0, w: -0.90837926}
+  m_LocalPosition: {x: 0, y: 0, z: -1.439}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4436,10 +4445,10 @@ RectTransform:
   - {fileID: 1981163386}
   - {fileID: 1074537340}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 230, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 310.565, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.25, y: 1.387}
+  m_AnchoredPosition: {x: 4.274, y: 1.559}
   m_SizeDelta: {x: 120, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620401340
@@ -4637,7 +4646,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 688208809}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -5150,7 +5160,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 771735946}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -5267,7 +5278,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 803956482}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -5842,7 +5854,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 944688521}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -6452,7 +6465,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -2816409035840759171, guid: 0160ae60a1e2e684784552ae58e5bb8e, type: 3}
+  m_Mesh: {fileID: -4047197814596770360, guid: 9e0cb3bd073d0cd48ae7d9f6eae3a1c2, type: 3}
 --- !u!114 &1088313403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6489,7 +6502,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1088313404}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -6653,7 +6667,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1117412963}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -7412,7 +7427,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1356755162}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -7557,7 +7573,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1368135748}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -8011,7 +8028,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1467927836}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -8128,7 +8146,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1477578465}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -8550,7 +8569,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1513125049}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -8876,7 +8896,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1531478174}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -8993,7 +9014,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1560368979}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -9387,7 +9409,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1614305055}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -9512,119 +9535,119 @@ MonoBehaviour:
   assemblySteps:
   - requiredPart: {fileID: 1315652100}
     socket: {fileID: 1979109654}
-    instruction: Place Body
+    instruction: Position the main valve body in its designated location
     number: 1
   - requiredPart: {fileID: 139408940}
     socket: {fileID: 803956481}
-    instruction: Place Bodytop
+    instruction: Place the body top onto the main valve body
     number: 2
   - requiredPart: {fileID: 1879459558}
     socket: {fileID: 489780412}
-    instruction: Place Seat
+    instruction: Insert the valve seat into the body
     number: 3
   - requiredPart: {fileID: 596311903}
     socket: {fileID: 688208808}
-    instruction: Place Seal
+    instruction: Fit the seal into its designated groove
     number: 4
   - requiredPart: {fileID: 1164515199}
     socket: {fileID: 1560368978}
-    instruction: Place Collar
+    instruction: Position the collar onto the assembly
     number: 5
   - requiredPart: {fileID: 1582402034}
     socket: {fileID: 1356755159}
-    instruction: Place Filler
+    instruction: Insert the filler into its designated position
     number: 6
   - requiredPart: {fileID: 1973786998}
     socket: {fileID: 1368135749}
-    instruction: Place BrigadeSmall
+    instruction: Position the first small bracket component
     number: 7
   - requiredPart: {fileID: 69037315}
     socket: {fileID: 1698452353}
-    instruction: Place Stud_small_1
+    instruction: Insert the first small stud into its mounting hole
     number: 8
   - requiredPart: {fileID: 1791356669}
     socket: {fileID: 1797639032}
-    instruction: Place Stud_small_2
+    instruction: Insert the second small stud into its mounting hole
     number: 9
   - requiredPart: {fileID: 295501082}
     socket: {fileID: 1728657324}
-    instruction: Place Normal_Stud_1
+    instruction: Insert the first standard stud into its mounting hole
     number: 10
   - requiredPart: {fileID: 47311768}
     socket: {fileID: 1614305054}
-    instruction: Place Normal_Stud_2
+    instruction: Insert the second standard stud into its mounting hole
     number: 11
   - requiredPart: {fileID: 1612521153}
     socket: {fileID: 1883281389}
-    instruction: Place Normal_Stud_3
+    instruction: Insert the third standard stud into its mounting hole
     number: 12
   - requiredPart: {fileID: 572380906}
     socket: {fileID: 301088740}
-    instruction: Place Normal_Stud_4
+    instruction: Insert the fourth standard stud into its mounting hole
     number: 13
   - requiredPart: {fileID: 1637763088}
     socket: {fileID: 237052658}
-    instruction: Place Normal_Stud_5
+    instruction: Insert the fifth standard stud into its mounting hole
     number: 14
   - requiredPart: {fileID: 1398161165}
     socket: {fileID: 1117412962}
-    instruction: Place Normal_Stud_6
+    instruction: Insert the sixth standard stud into its mounting hole
     number: 15
   - requiredPart: {fileID: 1874181862}
     socket: {fileID: 152898015}
-    instruction: Place Hex_nut_1
+    instruction: Tighten the first hex nut onto its corresponding stud
     number: 16
   - requiredPart: {fileID: 1737788059}
     socket: {fileID: 1531478173}
-    instruction: Place Hex_nut_2
+    instruction: Tighten the second hex nut onto its corresponding stud
     number: 17
   - requiredPart: {fileID: 985732960}
     socket: {fileID: 149459955}
-    instruction: Place Hex_nut_3
+    instruction: Tighten the third hex nut onto its corresponding stud
     number: 18
   - requiredPart: {fileID: 289780574}
     socket: {fileID: 85576381}
-    instruction: Place Hex_nut_4
+    instruction: Tighten the fourth hex nut onto its corresponding stud
     number: 19
   - requiredPart: {fileID: 598045070}
     socket: {fileID: 615433533}
-    instruction: Place Hex_nut_5
+    instruction: Tighten the fifth hex nut onto its corresponding stud
     number: 20
   - requiredPart: {fileID: 291080737}
     socket: {fileID: 771735945}
-    instruction: Place Hex_nut_6
+    instruction: Tighten the sixth hex nut onto its corresponding stud
     number: 21
-  - requiredPart: {fileID: 816017823}
-    socket: {fileID: 525485519}
-    instruction: Place Hex_nut_7
-    number: 22
-  - requiredPart: {fileID: 242717872}
-    socket: {fileID: 1467927835}
-    instruction: Place Hex_nut_8
-    number: 23
   - requiredPart: {fileID: 263700259}
-    socket: {fileID: 429005133}
-    instruction: Place Big_Stud_1
-    number: 24
+    socket: {fileID: 525485519}
+    instruction: Insert the first large stud into its mounting position
+    number: 22
   - requiredPart: {fileID: 1601164956}
-    socket: {fileID: 1088313403}
-    instruction: Place Big_Stud_2
-    number: 25
+    socket: {fileID: 1467927835}
+    instruction: Insert the second large stud into its mounting position
+    number: 23
   - requiredPart: {fileID: 1373497087}
+    socket: {fileID: 429005133}
+    instruction: Position the main bracket onto the assembly
+    number: 24
+  - requiredPart: {fileID: 816017823}
+    socket: {fileID: 1088313403}
+    instruction: Tighten the seventh hex nut onto its corresponding stud
+    number: 25
+  - requiredPart: {fileID: 242717872}
     socket: {fileID: 1477578464}
-    instruction: Place Brigade
+    instruction: Tighten the eighth hex nut onto its corresponding stud
     number: 26
   - requiredPart: {fileID: 1234770702}
     socket: {fileID: 944688520}
-    instruction: Place Spindle
+    instruction: Insert the spindle into the valve assembly
     number: 27
   - requiredPart: {fileID: 970795704}
     socket: {fileID: 1513125048}
-    instruction: Place Steering wheel
+    instruction: Attach the steering wheel to the spindle
     number: 28
   - requiredPart: {fileID: 2098095694}
     socket: {fileID: 1728315809}
-    instruction: Place Domed_cap_nut
+    instruction: Secure the steering wheel using the domed cap nut
     number: 29
   hologram: {fileID: 1092025235}
   partsManager: {fileID: 1352350683}
@@ -9785,7 +9808,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1698452354}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -10061,7 +10085,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1728315810}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -10178,7 +10203,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1728657325}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -10548,7 +10574,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1797639033}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
@@ -10972,7 +10999,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1883281390}
   m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
