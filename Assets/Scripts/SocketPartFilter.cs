@@ -11,7 +11,7 @@ public class SocketPartFilter : MonoBehaviour, IXRSelectFilter
     {
         var part = interactable.transform.gameObject;
 
-        bool isCorrect = part == requiredPart;
+        bool isCorrect = part.tag == requiredPart.tag;
 
         Debug.Log(
             $"Socket: {name} | Incoming: {part.name} | Expected: {requiredPart.name} | Allowed: {isCorrect}"

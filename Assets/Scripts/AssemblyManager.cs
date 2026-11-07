@@ -105,6 +105,12 @@ public class AssemblyManager : MonoBehaviour
         if (placedParts.Contains(args.interactableObject.transform.gameObject)) return;
 
         StartCoroutine(WaitForPlacement(objPlaced, currentStep.socket.transform));
+        
+
+    }
+
+    private void NextStep()
+    {
         _currentStep++;
 
         if (_currentStep >= 6 && isInSectionView)
@@ -123,7 +129,6 @@ public class AssemblyManager : MonoBehaviour
         }
         else
             AssemblyComplete?.Invoke();
-
     }
 
     private IEnumerator WaitForPlacement(GameObject obj, Transform attachTransorm)
@@ -139,6 +144,7 @@ public class AssemblyManager : MonoBehaviour
         placedParts.Add(obj);
         Debug.Log($"Placed part: {obj.name}");
         currentStep.socket.socketActive = false;
+        NextStep();
     }
     private void ResetObj(GameObject obj)
     {
