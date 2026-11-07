@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class InstructionsUI : MonoBehaviour
 {
     public TextMeshProUGUI instructionTxtComp;
-    public Transform player;
     public Button startBtn;
     public static event Action AssemblyStarted;
     public float instructionsFontSize = 10f;
@@ -33,11 +32,6 @@ public class InstructionsUI : MonoBehaviour
         startBtn.onClick.RemoveAllListeners();
         startBtn.onClick.AddListener(() => AssemblyStarted?.Invoke());
         startBtn.gameObject.SetActive(true);
-    }
-
-    private void Update()
-    {
-        transform.LookAt(player);
     }
 
     private void OnEnable()
