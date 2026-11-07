@@ -30,7 +30,7 @@ public class InstructionsUI : MonoBehaviour
         ShowInstruction("Congratualations!, you successfully Assembled the Stop Valve");
         startBtn.GetComponentInChildren<TextMeshProUGUI>().text = "Restart";
         startBtn.onClick.RemoveAllListeners();
-        startBtn.onClick.AddListener(() => AssemblyStarted?.Invoke());
+        startBtn.onClick.AddListener(() => SceneManager.LoadScene(0));
         startBtn.gameObject.SetActive(true);
     }
 
@@ -39,7 +39,7 @@ public class InstructionsUI : MonoBehaviour
         AssemblyManager.AssemblyStepGiven += (step) => ShowInstruction(step.instruction);
     }
 
-    private void ShowInstruction(string instructionTxt)
+    public void ShowInstruction(string instructionTxt)
     {
         instructionTxtComp.text = instructionTxt;
     }
