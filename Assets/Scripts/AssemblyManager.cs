@@ -20,14 +20,20 @@ public class AssemblyManager : MonoBehaviour
     public Transform sockets;
     private HashSet<GameObject> placedParts = new HashSet<GameObject>();
     private bool isInSectionView = false;
-    private bool canProgress = true;
     private AssemblyStep currentStep;
     public AssemblyStep[] remainingSteps => assemblySteps.ToArray()[_currentStep..assemblySteps.Count];
     private void OnEnable()
     {
         AssemblyStepGiven += OnNewStepGiven;
         InstructionsUI.AssemblyStarted += OnAssemblyStarted;
-        SectionViewUI.SectionViewToggled += (obj) => isInSectionView = obj;
+        SectionViewUI.SectionViewToggled += (isOn) =>
+        {
+            isInSectionView = isOn;
+            if(!isOn && _currentStep == 6)
+            {
+                AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
+            }
+        };
     }
     private void OnAssemblyStarted()
     {
@@ -113,29 +119,21 @@ public class AssemblyManager : MonoBehaviour
     {
         _currentStep++;
 
+        if (_currentStep >= assemblySteps.Count)
+        {
+            AssemblyComplete?.Invoke();
+            return;
+        }
+
         if (_currentStep >= 6 && isInSectionView)
         {
-            canProgress = false;
+
             instructionsUI.ShowInstruction("Turn off the section view to continue the assembly");
             hologram.RemoveCurrentHologram();
-        }
-        else
-        {
-            canProgress = true;
+            return;
         }
 
-        while (!canProgress || _currentStep < 6)
-        {
-            if (_currentStep < assemblySteps.Count)
-            {
-                AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
-            }
-            else if (_currentStep >= assemblySteps.Count)
-            {
-                AssemblyComplete?.Invoke();
-            }
-        }
-
+        AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
     }
 
     private IEnumerator WaitForPlacement(GameObject obj, Transform attachTransorm)

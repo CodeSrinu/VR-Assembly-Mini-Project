@@ -7744,7 +7744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PartHoverUI
   partNameText: {fileID: 346153245}
   background: {fileID: 1459181083}
-  yOffset: 0.3
+  yOffset: 0.45
   zOffset: 0.2
   parts:
   - {fileID: 1315652110}
