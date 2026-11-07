@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PartsManager : MonoBehaviour
 {
     public Transform partsParent;
+    public Transform socketsParent;
     private Dictionary<GameObject, Vector3> partsInitialPositions = new Dictionary<GameObject, Vector3>();
     private Dictionary<GameObject, Quaternion> partsInitialRotations = new Dictionary<GameObject, Quaternion>();
 
@@ -25,12 +27,31 @@ public class PartsManager : MonoBehaviour
         }
     }
 
-    public void ResetParts(AssemblyStep[] parts)
+    public void ResetParts(AssemblyStep[] steps)
     {
-        foreach (var part in parts)
+        foreach (var step in steps)
         {
-            part.requiredPart.transform.localPosition = partsInitialPositions[part.requiredPart];
-            part.requiredPart.transform.localRotation = partsInitialRotations[part.requiredPart];
+            step.requiredPart.transform.localPosition = partsInitialPositions[step.requiredPart];
+            step.requiredPart.transform.localRotation = partsInitialRotations[step.requiredPart];
         }
+    }
+
+    private void SetPosAndRotForAssembly(Transform partsParent, Transform socketsParent)
+    {
+        for (int i = 0; i < partsParent.childCount; i++)
+        {
+            Transform part = partsParent.GetChild(i);
+            Transform socket = socketsParent.GetChild(i);
+
+            part.position = socket.position;
+            part.rotation = socket.rotation;
+        }
+        
+    }
+
+    [ContextMenu("Align Parts To Sockets")]
+    public void AlignPartsInEditor()
+    {
+        SetPosAndRotForAssembly(partsParent, socketsParent);
     }
 }

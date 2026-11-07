@@ -18,7 +18,8 @@ public class SectionViewUI : MonoBehaviour
 
     private void OnNewStepGiven(AssemblyStep step)
     {
-        if(step.number == 1)
+        Debug.Log($"OnNewstepGiven is called in SectionViewUI with step number: {step.number} and consdition: {step.number == 3}");
+        if(step.number == 3f)
             gameObject.SetActive(true);
     }
 

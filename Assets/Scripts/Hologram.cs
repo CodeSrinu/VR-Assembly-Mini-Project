@@ -13,6 +13,13 @@ public class Hologram : MonoBehaviour
     private void OnEnable()
     {
         AssemblyManager.AssemblyStepGiven += OnNewStepGiven;
+        AssemblyManager.AssemblyComplete += OnAssemblyEnded;
+    }
+
+    private void OnAssemblyEnded()
+    {
+        //Destroy(currentHoloGramObj);
+        currentHoloGramObj.SetActive(false);
     }
 
     private void OnNewStepGiven(AssemblyStep step)
@@ -22,7 +29,8 @@ public class Hologram : MonoBehaviour
 
     private void ShowCurrentStepHologram(GameObject partMesh, Transform socketTransform)
     {
-        if(currentHoloGramObj != null) Destroy(currentHoloGramObj);
+        //if(currentHoloGramObj != null) Destroy(currentHoloGramObj);
+        if(currentHoloGramObj != null) currentHoloGramObj.SetActive(false);
 
         currentHoloGramObj = Instantiate(partMesh, socketTransform.position, socketTransform.rotation);
         ResetObj(currentHoloGramObj);

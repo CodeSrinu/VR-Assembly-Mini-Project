@@ -26,12 +26,14 @@ public class AssemblyManager : MonoBehaviour
     private void OnAssemblyStarted()
     {
         partsManager.ResetAllParts();
-        foreach (var step in assemblySteps)
+        for(int i = 0; i < assemblySteps.Count; i++)
         {
+            AssemblyStep step = assemblySteps[i];
             step.socket.socketActive = false;
             step.socket.hoverEntered.AddListener(OnHoverEntered);
             step.socket.hoverExited.AddListener(OnHoverExited);
             step.socket.selectEntered.AddListener(OnSelectEntered);
+            step.number = i + 1;
         }
         _currentStep = 0;
         AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
@@ -39,7 +41,9 @@ public class AssemblyManager : MonoBehaviour
 
     private void OnNewStepGiven(AssemblyStep step)
     {
+        Debug.Log($"Current Step: {step.requiredPart.name}, stepNumber: {step.number}");
         step.socket.socketActive = true;
+
     }
 
     private void OnDisable()
@@ -53,13 +57,17 @@ public class AssemblyManager : MonoBehaviour
     }
     private void OnHoverEntered(HoverEnterEventArgs args)
     {
-        if((IXRInteractor)assemblySteps[_currentStep].socket == args.interactorObject)
+        if (_currentStep >= assemblySteps.Count) return;
+
+        if ((IXRInteractor)assemblySteps[_currentStep].socket == args.interactorObject)
         {
             ShowValidationFeedback(args.interactableObject.transform.gameObject);
         }
     }
     private void OnHoverExited(HoverExitEventArgs args)
     {
+        if (_currentStep >= assemblySteps.Count) return;
+
         if((IXRInteractor)assemblySteps[_currentStep].socket == args.interactorObject)
         {
             hologram.ResetToHologramMat();
@@ -81,6 +89,8 @@ public class AssemblyManager : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         GameObject objPlaced = args.interactableObject.transform.gameObject;
+        if (_currentStep >= assemblySteps.Count) return;
+
         if (objPlaced != assemblySteps[_currentStep].requiredPart)
             return;
 
@@ -90,7 +100,7 @@ public class AssemblyManager : MonoBehaviour
         StartCoroutine(WaitForPlacement(objPlaced, assemblySteps[_currentStep].socket.transform));
         _currentStep++;
 
-        if (_currentStep <= assemblySteps.Count)
+        if (_currentStep < assemblySteps.Count)
             AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
         else
             AssemblyComplete?.Invoke();
