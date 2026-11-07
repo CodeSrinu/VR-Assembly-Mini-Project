@@ -5,7 +5,7 @@ using UnityEngine;
 public class PartsManager : MonoBehaviour
 {
     public Transform partsParent;
-    public Transform socketsParent;
+    //public Transform socketsParent;
     private Dictionary<GameObject, Vector3> partsInitialPositions = new Dictionary<GameObject, Vector3>();
     private Dictionary<GameObject, Quaternion> partsInitialRotations = new Dictionary<GameObject, Quaternion>();
 
@@ -49,9 +49,9 @@ public class PartsManager : MonoBehaviour
         
     }
 
-    [ContextMenu("Align Parts To Sockets")]
-    public void AlignPartsInEditor()
-    {
-        SetPosAndRotForAssembly(partsParent, socketsParent);
-    }
+    //[ContextMenu("Align Parts To Sockets")]
+    //public void AlignPartsInEditor()
+    //{
+    //    SetPosAndRotForAssembly(partsParent, socketsParent);
+    //}
 }

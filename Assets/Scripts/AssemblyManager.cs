@@ -15,8 +15,10 @@ public class AssemblyManager : MonoBehaviour
     public static event Action AssemblyComplete;
     public Hologram hologram;
     public PartsManager partsManager;
-    
-    public AssemblyStep[] remainingSteps => assemblySteps.ToArray()[_currentStep .. assemblySteps.Count];
+    public Transform partsparent;
+    public Transform sockets;
+
+    public AssemblyStep[] remainingSteps => assemblySteps.ToArray()[_currentStep..assemblySteps.Count];
     private void OnEnable()
     {
         AssemblyStepGiven += OnNewStepGiven;
@@ -26,14 +28,16 @@ public class AssemblyManager : MonoBehaviour
     private void OnAssemblyStarted()
     {
         partsManager.ResetAllParts();
-        for(int i = 0; i < assemblySteps.Count; i++)
+        for (int i = 0; i < assemblySteps.Count; i++)
         {
             AssemblyStep step = assemblySteps[i];
             step.socket.socketActive = false;
             step.socket.hoverEntered.AddListener(OnHoverEntered);
             step.socket.hoverExited.AddListener(OnHoverExited);
             step.socket.selectEntered.AddListener(OnSelectEntered);
+            step.socket.attachTransform = step.socket.transform;
             step.number = i + 1;
+
         }
         _currentStep = 0;
         AssemblyStepGiven?.Invoke(assemblySteps[_currentStep]);
@@ -68,7 +72,7 @@ public class AssemblyManager : MonoBehaviour
     {
         if (_currentStep >= assemblySteps.Count) return;
 
-        if((IXRInteractor)assemblySteps[_currentStep].socket == args.interactorObject)
+        if ((IXRInteractor)assemblySteps[_currentStep].socket == args.interactorObject)
         {
             hologram.ResetToHologramMat();
         }
@@ -91,10 +95,10 @@ public class AssemblyManager : MonoBehaviour
         GameObject objPlaced = args.interactableObject.transform.gameObject;
         if (_currentStep >= assemblySteps.Count) return;
 
-        if (objPlaced != assemblySteps[_currentStep].requiredPart)
+        if (objPlaced.tag != assemblySteps[_currentStep].requiredPart.tag)
             return;
 
-        if (assemblySteps[_currentStep].socket.tag != args.interactorObject.transform.gameObject.tag)
+        if (assemblySteps[_currentStep].socket != args.interactorObject.transform.gameObject)
             return;
 
         StartCoroutine(WaitForPlacement(objPlaced, assemblySteps[_currentStep].socket.transform));
@@ -109,8 +113,8 @@ public class AssemblyManager : MonoBehaviour
 
     private IEnumerator WaitForPlacement(GameObject obj, Transform attachTransorm)
     {
-        
-        while(Vector3.Distance(obj.transform.position, attachTransorm.position) > 0.001f
+
+        while (Vector3.Distance(obj.transform.position, attachTransorm.position) > 0.001f
             || Quaternion.Angle(obj.transform.rotation, attachTransorm.rotation) > 0.1f)
         {
             yield return null;
@@ -133,5 +137,25 @@ public class AssemblyManager : MonoBehaviour
 
         obj.GetComponent<Rigidbody>().isKinematic = true;
         obj.GetComponent<Rigidbody>().useGravity = false;
+    }
+
+    [ContextMenu("Assign")]
+    private void AssignScripts()
+    {
+        Assign();
+    }
+
+    private void Assign()
+    {
+        
+        for(int i = 0; i < partsparent.childCount; i++) 
+        {
+            AssemblyStep step = new AssemblyStep();
+
+            step.requiredPart = partsparent.GetChild(i).gameObject;
+            step.socket = sockets.GetChild(i).GetComponent<XRSocketInteractor>();
+            step.instruction = "Place " + step.requiredPart.name;
+            assemblySteps.Add(step);
+        }
     }
 }

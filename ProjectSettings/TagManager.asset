@@ -5,6 +5,21 @@ TagManager:
   serializedVersion: 3
   tags:
   - Body Socket
+  - Body
+  - BodyTop
+  - Seat
+  - Seal
+  - Collar
+  - Filler
+  - Brigade
+  - StudSmall
+  - NormalStud
+  - HexNut
+  - BigStud
+  - Spindle
+  - Wheel
+  - CapNut
+  - BrigadeSmall
   layers:
   - Default
   - TransparentFX
