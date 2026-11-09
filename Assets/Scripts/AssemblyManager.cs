@@ -169,7 +169,7 @@ public class AssemblyManager : MonoBehaviour
 
     private IEnumerator WaitForPlacement(GameObject obj, Transform attachTransorm)
     {
-
+        AudioManager.Instance.PlayPartPlacement();
         while (Vector3.Distance(obj.transform.position, attachTransorm.position) > 0.005f
             || Quaternion.Angle(obj.transform.rotation, attachTransorm.rotation) > 0.5f)
         {

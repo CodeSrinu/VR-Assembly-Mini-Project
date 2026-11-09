@@ -16,6 +16,7 @@ public class InstructionsUI : MonoBehaviour
     {
         startBtn.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonClick();
             AssemblyStarted?.Invoke();
             startBtn.gameObject.SetActive(false);
             instructionTxtComp.autoSizeTextContainer = false;
@@ -27,10 +28,14 @@ public class InstructionsUI : MonoBehaviour
 
     private void OnAssemblyComplete()
     {
+        AudioManager.Instance.PlayAssemblyComplete();
         ShowInstruction("Congratualations!, you successfully Assembled the Stop Valve");
         startBtn.GetComponentInChildren<TextMeshProUGUI>().text = "Restart";
         startBtn.onClick.RemoveAllListeners();
-        startBtn.onClick.AddListener(() => SceneManager.LoadScene(0));
+        startBtn.onClick.AddListener(() => {
+            AudioManager.Instance.PlayButtonClick();
+            SceneManager.LoadScene(0);
+        });
         startBtn.gameObject.SetActive(true);
     }
 

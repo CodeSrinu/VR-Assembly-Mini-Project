@@ -66,10 +66,12 @@ public class Hologram : MonoBehaviour
 
     public void ShowIncorrectFeedBack()
     {
+        AudioManager.Instance.PlayIncorrectHover();
         hologramMRender.materials = new Material[] { incorrectFeedbackMat };
     }
     public void ShowCorrectFeedBack()
     {
+        AudioManager.Instance.PlayCorrectHover();
         hologramMRender.materials = new Material[] { correctFeedbackMat };
     }
     public void ResetToHologramMat()

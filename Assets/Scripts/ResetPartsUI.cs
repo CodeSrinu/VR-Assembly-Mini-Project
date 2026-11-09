@@ -12,6 +12,7 @@ public class ResetPartsUI : MonoBehaviour
     {
         btn.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonClick();
             List<AssemblyStep> unAssembledParts = new List<AssemblyStep>();
             foreach (AssemblyStep step in assemblyManager.assemblySteps)
             {

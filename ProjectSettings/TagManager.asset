@@ -20,6 +20,10 @@ TagManager:
   - Wheel
   - CapNut
   - BrigadeSmall
+  - Small Stud
+  - Normal Stud
+  - Big Stud
+  - Small Brigade
   layers:
   - Default
   - TransparentFX
