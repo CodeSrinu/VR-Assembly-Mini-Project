@@ -18,40 +18,40 @@ public class AssemblyManager : MonoBehaviour
     public InstructionsUI instructionsUI;
     public Transform partsparent;
     public Transform sockets;
-    private HashSet<GameObject> placedParts = new HashSet<GameObject>();
+    public HashSet<GameObject> placedParts = new HashSet<GameObject>();
     private bool isInSectionView = false;
     private AssemblyStep currentStep;
     string[] instructions =
 {
-    "Position the <b>Body</b> in its designated location",
-    "Place the <b>Body Top</b> onto the main valve body",
-    "Insert the <b>Seat</b> into the body",
-    "Fit the <b>Seal</b> into its designated groove",
-    "Position the <b>Collar</b> onto the assembly",
-    "Insert the <b>Filler</b> into its designated position",
-    "Position the first <b>Small Brigade</b> component",
-    "Insert the first <b>Small Stud</b> into its mounting hole",
-    "Insert the second <b>Small Stud</b> into its mounting hole",
-    "Insert the first <b>Normal Stud</b> into its mounting hole",
-    "Insert the second <b>Normal Stud</b> into its mounting hole",
-    "Insert the third <b>Normal Stud</b> into its mounting hole",
-    "Insert the fourth <b>Normal Stud</b> into its mounting hole",
-    "Insert the fifth <b>Normal Stud</b> into its mounting hole",
-    "Insert the sixth <b>Normal Stud</b> into its mounting hole",
-    "Tighten the first <b>Hex Nut</b> onto its corresponding stud",
-    "Tighten the second <b>Hex Nut</b> onto its corresponding stud",
-    "Tighten the third <b>Hex Nut</b> onto its corresponding stud",
-    "Tighten the fourth <b>Hex Nut</b> onto its corresponding stud",
-    "Tighten the fifth <b>Hex Nut</b> onto its corresponding stud",
-    "Tighten the sixth <b>Hex Nut</b> onto its corresponding stud",
-    "Insert the first <b>Big Stud</b> into its mounting position",
-    "Insert the second <b>Big Stud</b> into its mounting position",
-    "Position the main <b>Brigade</b> onto the assembly",
-    "Tighten the seventh <b>Hex Nut</b> onto its corresponding stud",
-    "Tighten the eighth <b>Hex Nut</b> onto its corresponding stud",
-    "Insert the <b>Spindle</b> into the valve assembly",
-    "Attach the <b>Steering Wheel</b> to the spindle",
-    "Secure the steering wheel using the <b>Domed Cap Nut</b>"
+    "Position the <color=#55D9FF><b>BODY</b></color> in its designated location",
+    "Place the <color=#55D9FF><b>BODY TOP</b></color> onto the main valve body",
+    "Turn on the Section View and insert the <color=#55D9FF><b>SEAT</b></color> into the body",
+    "Fit the <color=#55D9FF><b>SEAL</b></color> into its designated groove",
+    "Position the <color=#55D9FF><b>COLLAR</b></color> onto the assembly",
+    "Insert the <color=#55D9FF><b>FILLER</b></color> into its designated position",
+    "Position the first <color=#55D9FF><b>SMALL BRIGADE</b></color> component",
+    "Insert the first <color=#55D9FF><b>SMALL STUD</b></color> into its mounting hole",
+    "Insert the second <color=#55D9FF><b>SMALL STUD</b></color> into its mounting hole",
+    "Insert the first <color=#55D9FF><b>NORMAL STUD</b></color> into its mounting hole",
+    "Insert the second <color=#55D9FF><b>NORMAL STUD</b></color> into its mounting hole",
+    "Insert the third <color=#55D9FF><b>NORMAL STUD</b></color> into its mounting hole",
+    "Insert the fourth <color=#55D9FF><b>NORMAL STUD</b></color> into its mounting hole",
+    "Insert the fifth <color=#55D9FF><b>NORMAL STUD</b></color> into its mounting hole",
+    "Insert the sixth <color=#55D9FF><b>NORMAL STUD</b></color> into its mounting hole",
+    "Tighten the first <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Tighten the second <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Tighten the third <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Tighten the fourth <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Tighten the fifth <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Tighten the sixth <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Insert the first <color=#55D9FF><b>BIG STUD</b></color> into its mounting position",
+    "Insert the second <color=#55D9FF><b>BIG STUD</b></color> into its mounting position",
+    "Position the main <color=#55D9FF><b>BRIGADE</b></color> onto the assembly",
+    "Tighten the seventh <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Tighten the eighth <color=#55D9FF><b>HEX NUT</b></color> onto its corresponding stud",
+    "Insert the <color=#55D9FF><b>SPINDLE</b></color> into the valve assembly",
+    "Attach the <color=#55D9FF><b>STEERING WHEEL</b></color> to the spindle",
+    "Secure the steering wheel using the <color=#55D9FF><b>DOMED CAP NUT</b></color>"
 };
     public AssemblyStep[] remainingSteps => assemblySteps.ToArray()[_currentStep..assemblySteps.Count];
     private void OnEnable()
@@ -116,7 +116,6 @@ public class AssemblyManager : MonoBehaviour
         if ((IXRInteractor)assemblySteps[_currentStep].socket != args.interactorObject) return;
 
         hologram?.ResetToHologramMat();
-        
     }
     private void ShowValidationFeedback(GameObject obj)
     {
@@ -201,6 +200,7 @@ public class AssemblyManager : MonoBehaviour
     private void AssignScripts()
     {
         Assign();
+        Debug.Log("Dependances are assigned");
     }
     private void Assign()
     {

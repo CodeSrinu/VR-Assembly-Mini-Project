@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +12,16 @@ public class ResetPartsUI : MonoBehaviour
     {
         btn.onClick.AddListener(() =>
         {
-            partsManager.ResetParts(assemblyManager.remainingSteps);
+            List<AssemblyStep> unAssembledParts = new List<AssemblyStep>();
+            foreach (AssemblyStep step in assemblyManager.assemblySteps)
+            {
+                if (!assemblyManager.placedParts.Contains(step.requiredPart))
+                {
+                    unAssembledParts.Add(step);
+                }
+            }
+
+            partsManager.ResetParts(unAssembledParts.ToArray());
         });
     }
 }

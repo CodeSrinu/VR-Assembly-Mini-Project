@@ -4435,7 +4435,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620401333}
   m_LocalRotation: {x: -0, y: 0.41814727, z: -0, w: -0.90837926}
-  m_LocalPosition: {x: 0, y: 0, z: -1.439}
+  m_LocalPosition: {x: 0, y: 0, z: -1.627}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4448,7 +4448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 310.565, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.274, y: 1.559}
+  m_AnchoredPosition: {x: 4.494, y: 1.559}
   m_SizeDelta: {x: 120, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620401340
@@ -6209,6 +6209,155 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029941329}
   m_CullTransparentMesh: 1
+--- !u!1 &1062704950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062704953}
+  - component: {fileID: 1062704952}
+  - component: {fileID: 1062704951}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1062704951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062704950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1328f1cf1e7123b4693c5302ccc5ac6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  buttonClick: {fileID: 0}
+  buttonHover: {fileID: 0}
+  correctHover: {fileID: 0}
+  incorrectHover: {fileID: 0}
+  partPlacement: {fileID: 0}
+  sectionViewToggle: {fileID: 0}
+  assemblyComplete: {fileID: 0}
+--- !u!82 &1062704952
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062704950}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1062704953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062704950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.91168, y: 0.81602, z: -1.26987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1064499500
 GameObject:
   m_ObjectHideFlags: 0
@@ -9095,11 +9244,11 @@ Transform:
   - {fileID: 85576379}
   - {fileID: 615433531}
   - {fileID: 771735943}
-  - {fileID: 525485517}
-  - {fileID: 1467927833}
   - {fileID: 429005131}
   - {fileID: 1088313401}
   - {fileID: 1477578462}
+  - {fileID: 525485517}
+  - {fileID: 1467927833}
   - {fileID: 944688518}
   - {fileID: 1513125046}
   - {fileID: 1728315807}
@@ -9535,119 +9684,144 @@ MonoBehaviour:
   assemblySteps:
   - requiredPart: {fileID: 1315652100}
     socket: {fileID: 1979109654}
-    instruction: Position the main valve body in its designated location
+    instruction: Position the <color=#55D9FF><b>BODY</b></color> in its designated
+      location
     number: 1
   - requiredPart: {fileID: 139408940}
     socket: {fileID: 803956481}
-    instruction: Place the body top onto the main valve body
+    instruction: Place the <color=#55D9FF><b>BODY TOP</b></color> onto the main valve
+      body
     number: 2
   - requiredPart: {fileID: 1879459558}
     socket: {fileID: 489780412}
-    instruction: Insert the valve seat into the body
+    instruction: Turn on the Section View and insert the <color=#55D9FF><b>SEAT</b></color>
+      into the body
     number: 3
   - requiredPart: {fileID: 596311903}
     socket: {fileID: 688208808}
-    instruction: Fit the seal into its designated groove
+    instruction: Fit the <color=#55D9FF><b>SEAL</b></color> into its designated groove
     number: 4
   - requiredPart: {fileID: 1164515199}
     socket: {fileID: 1560368978}
-    instruction: Position the collar onto the assembly
+    instruction: Position the <color=#55D9FF><b>COLLAR</b></color> onto the assembly
     number: 5
   - requiredPart: {fileID: 1582402034}
     socket: {fileID: 1356755159}
-    instruction: Insert the filler into its designated position
+    instruction: Insert the <color=#55D9FF><b>FILLER</b></color> into its designated
+      position
     number: 6
   - requiredPart: {fileID: 1973786998}
     socket: {fileID: 1368135749}
-    instruction: Position the first small bracket component
+    instruction: Position the first <color=#55D9FF><b>SMALL BRIGADE</b></color> component
     number: 7
   - requiredPart: {fileID: 69037315}
     socket: {fileID: 1698452353}
-    instruction: Insert the first small stud into its mounting hole
+    instruction: Insert the first <color=#55D9FF><b>SMALL STUD</b></color> into its
+      mounting hole
     number: 8
   - requiredPart: {fileID: 1791356669}
     socket: {fileID: 1797639032}
-    instruction: Insert the second small stud into its mounting hole
+    instruction: Insert the second <color=#55D9FF><b>SMALL STUD</b></color> into
+      its mounting hole
     number: 9
   - requiredPart: {fileID: 295501082}
     socket: {fileID: 1728657324}
-    instruction: Insert the first standard stud into its mounting hole
+    instruction: Insert the first <color=#55D9FF><b>NORMAL STUD</b></color> into
+      its mounting hole
     number: 10
   - requiredPart: {fileID: 47311768}
     socket: {fileID: 1614305054}
-    instruction: Insert the second standard stud into its mounting hole
+    instruction: Insert the second <color=#55D9FF><b>NORMAL STUD</b></color> into
+      its mounting hole
     number: 11
   - requiredPart: {fileID: 1612521153}
     socket: {fileID: 1883281389}
-    instruction: Insert the third standard stud into its mounting hole
+    instruction: Insert the third <color=#55D9FF><b>NORMAL STUD</b></color> into
+      its mounting hole
     number: 12
   - requiredPart: {fileID: 572380906}
     socket: {fileID: 301088740}
-    instruction: Insert the fourth standard stud into its mounting hole
+    instruction: Insert the fourth <color=#55D9FF><b>NORMAL STUD</b></color> into
+      its mounting hole
     number: 13
   - requiredPart: {fileID: 1637763088}
     socket: {fileID: 237052658}
-    instruction: Insert the fifth standard stud into its mounting hole
+    instruction: Insert the fifth <color=#55D9FF><b>NORMAL STUD</b></color> into
+      its mounting hole
     number: 14
   - requiredPart: {fileID: 1398161165}
     socket: {fileID: 1117412962}
-    instruction: Insert the sixth standard stud into its mounting hole
+    instruction: Insert the sixth <color=#55D9FF><b>NORMAL STUD</b></color> into
+      its mounting hole
     number: 15
   - requiredPart: {fileID: 1874181862}
     socket: {fileID: 152898015}
-    instruction: Tighten the first hex nut onto its corresponding stud
+    instruction: Tighten the first <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 16
   - requiredPart: {fileID: 1737788059}
     socket: {fileID: 1531478173}
-    instruction: Tighten the second hex nut onto its corresponding stud
+    instruction: Tighten the second <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 17
   - requiredPart: {fileID: 985732960}
     socket: {fileID: 149459955}
-    instruction: Tighten the third hex nut onto its corresponding stud
+    instruction: Tighten the third <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 18
   - requiredPart: {fileID: 289780574}
     socket: {fileID: 85576381}
-    instruction: Tighten the fourth hex nut onto its corresponding stud
+    instruction: Tighten the fourth <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 19
   - requiredPart: {fileID: 598045070}
     socket: {fileID: 615433533}
-    instruction: Tighten the fifth hex nut onto its corresponding stud
+    instruction: Tighten the fifth <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 20
   - requiredPart: {fileID: 291080737}
     socket: {fileID: 771735945}
-    instruction: Tighten the sixth hex nut onto its corresponding stud
+    instruction: Tighten the sixth <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 21
   - requiredPart: {fileID: 263700259}
-    socket: {fileID: 525485519}
-    instruction: Insert the first large stud into its mounting position
+    socket: {fileID: 429005133}
+    instruction: Insert the first <color=#55D9FF><b>BIG STUD</b></color> into its
+      mounting position
     number: 22
   - requiredPart: {fileID: 1601164956}
-    socket: {fileID: 1467927835}
-    instruction: Insert the second large stud into its mounting position
+    socket: {fileID: 1088313403}
+    instruction: Insert the second <color=#55D9FF><b>BIG STUD</b></color> into its
+      mounting position
     number: 23
   - requiredPart: {fileID: 1373497087}
-    socket: {fileID: 429005133}
-    instruction: Position the main bracket onto the assembly
+    socket: {fileID: 1477578464}
+    instruction: Position the main <color=#55D9FF><b>BRIGADE</b></color> onto the
+      assembly
     number: 24
   - requiredPart: {fileID: 816017823}
-    socket: {fileID: 1088313403}
-    instruction: Tighten the seventh hex nut onto its corresponding stud
+    socket: {fileID: 525485519}
+    instruction: Tighten the seventh <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 25
   - requiredPart: {fileID: 242717872}
-    socket: {fileID: 1477578464}
-    instruction: Tighten the eighth hex nut onto its corresponding stud
+    socket: {fileID: 1467927835}
+    instruction: Tighten the eighth <color=#55D9FF><b>HEX NUT</b></color> onto its
+      corresponding stud
     number: 26
   - requiredPart: {fileID: 1234770702}
     socket: {fileID: 944688520}
-    instruction: Insert the spindle into the valve assembly
+    instruction: Insert the <color=#55D9FF><b>SPINDLE</b></color> into the valve
+      assembly
     number: 27
   - requiredPart: {fileID: 970795704}
     socket: {fileID: 1513125048}
-    instruction: Attach the steering wheel to the spindle
+    instruction: Attach the <color=#55D9FF><b>STEERING WHEEL</b></color> to the spindle
     number: 28
   - requiredPart: {fileID: 2098095694}
     socket: {fileID: 1728315809}
-    instruction: Secure the steering wheel using the domed cap nut
+    instruction: Secure the steering wheel using the <color=#55D9FF><b>DOMED CAP
+      NUT</b></color>
     number: 29
   hologram: {fileID: 1092025235}
   partsManager: {fileID: 1352350683}
@@ -13862,3 +14036,4 @@ SceneRoots:
   - {fileID: 1813007018}
   - {fileID: 2088913319}
   - {fileID: 1459181090}
+  - {fileID: 1062704953}
